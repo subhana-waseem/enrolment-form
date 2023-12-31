@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enrollment Form</title>
+	<style>
+    body
+    {
+      
+      background-image: url("bg.jpg");
+      
+       background-size:cover;
+    }
+    form{
+        width: 70%;
+    margin: 30px ;
+    border: 2px solid rgb(7, 2, 97);
+    padding:20px;
+    box-shadow: 1px 1px 8px rgb(75, 1, 1);
+    }
+    div
+    {
+      color: rgb(15, 3, 3);
+    }
+    article
+    {
+      display:flex;
+      justify-content: center;
+      font-size: 25px;
+    }
+    header
+    {
+      color: rgb(62, 3, 16);
+      padding: 10px 10px 10px 10px;
+      text-align:center;
+      margin:30px;
+    }
+    input[type=text],input[type=radio],input[type=number],input[type=email],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+      border: 2px solid cyan;
+  border-radius: 4px;
+}
+    textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid cyan;
+  border-radius: 4px;
+  background-color: #680808;
+  resize: none;
+}
+      button
+    {
+      background-color: cyan;
+      border: none;
+      color: rgb(47, 9, 199);
+      padding: 16px 32px;
+      text-decoration: none;
+      text-align: center;
+      margin: 4px 2px;
+      cursor: pointer;
+      width:100%;
+    }
+	</style>
+</head>
+<body>
+ <div>
+  
+	<header>
+    <h1 id="title"><u>ENROLLMENT FORM</u></h1>
+		<p id="description"><i><strong>Please register below apply for job</strong></i></p>
+	</header>
+  <article>
+
+	<form action="connect.php" method="post"> 
+    <label id="name-label" for="name">Name:</label>
+    <br>
+  		<input required type="text" id="name" name="Name" placeholder="Enter your name">
+    <br><br>
+    <label id="name-label" for="name">father's Name:</label>
+    <br>
+  		<input required type="text" id="name" name="Name" placeholder="Enter your father's name">
+    <br><br>
+    <label id="name-label" for="name">mother's Name:</label>
+    <br>
+  		<input required type="text" id="name" name="Name" placeholder="Enter your mother's name">
+    <br><br>
+  
+  	<label id="email-label" for="email">Email:</label>
+    <br>
+  		<input required type="email" id="email" name="Email ID" placeholder="Enter your email">
+    <br><br>
+    
+    <label id="number-label" for="number">Phone:</label>
+    <br>
+  		<input type="number" id="number" name="Phone" placeholder="Enter mobile number">
+    <br><br>
+     <label id="address-label" for="address">permanent address:</label>
+     <br>
+       <input required type="text" id="address" name="address" placeholder="Enter your permanent">
+     <br><br>
+     <label id="qualification-label" for="qualification">qualificaton:</label>
+     <br>
+       <input required type="text" id="qualification" name="address" placeholder="Enter your qualification">
+     <br><br>
+     <div class="form-group">
+      <label for="gender">Gender:</label>
+      <div>
+        <label for="male" class="radio-inline"
+          ><input
+            type="radio"
+            name="gender"
+            value="m"
+            id="male"
+          />Male</label
+        >
+        <label for="female" class="radio-inline"
+          ><input
+            type="radio"
+            name="gender"
+            value="f"
+            id="female"
+          />Female</label>
+          </div>
+    <br><br>
+    <label id="dropdown-label" for="state">states:</label>
+    <br>
+   
+  		
+   <!--- India states -->
+<select id="country-state" name="country-state">
+  <option value="">Select state</option>
+  <option value="AN">Andaman and Nicobar Islands</option>
+  <option value="AP">Andhra Pradesh</option>
+  <option value="AR">Arunachal Pradesh</option>
+  <option value="AS">Assam</option>
+  <option value="BR">Bihar</option>
+  <option value="CH">Chandigarh</option>
+  <option value="CT">Chhattisgarh</option>
+  <option value="DN">Dadra and Nagar Haveli</option>
+  <option value="DD">Daman and Diu</option>
+  <option value="DL">Delhi</option>
+  <option value="GA">Goa</option>
+  <option value="GJ">Gujarat</option>
+  <option value="HR">Haryana</option>
+  <option value="HP">Himachal Pradesh</option>
+  <option value="JK">Jammu and Kashmir</option>
+  <option value="JH">Jharkhand</option>
+  <option value="KA">Karnataka</option>
+  <option value="KL">Kerala</option>
+  <option value="LA">Ladakh</option>
+  <option value="LD">Lakshadweep</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="MH">Maharashtra</option>
+  <option value="MN">Manipur</option>
+  <option value="ML">Meghalaya</option>
+  <option value="MZ">Mizoram</option>
+  <option value="NL">Nagaland</option>
+  <option value="OR">Odisha</option>
+  <option value="PY">Puducherry</option>
+  <option value="PB">Punjab</option>
+  <option value="RJ">Rajasthan</option>
+  <option value="SK">Sikkim</option>
+  <option value="TN">Tamil Nadu</option>
+  <option value="TG">Telangana</option>
+  <option value="TR">Tripura</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="UT">Uttarakhand</option>
+  <option value="WB">West Bengal</option>
+</select>
+ <br><br>
+ <input type="checkbox" id="interested" name="interested" value="yes i am intrested">
+ <label for="interested"> yes i am interested to do this job </label>
+ <br>
+
+
+
+<br><br>
+
+ <html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>QR Code Example</title> 
+</head> 
+<body> 
+    <!-- Add the image element where the QR code will be displayed --> 
+    <img src="qr.jpg" ,"QR Code"> 
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body> 
+</html> 
+
+</form>
+    </article>
+<br><br>
+</div>
+
